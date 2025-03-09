@@ -5,3 +5,12 @@
     src: url("/assets/font/Hastegi-yYBYe.otf");
 }
 
+h1{
+    font-family: "Hastegi";
+    font-size: clamp(3rem, 9vw, 8rem);
+    line-height: 1;
+}
+
+h3{
+    font-size: 2rem;
+}

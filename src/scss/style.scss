@@ -3,3 +3,7 @@
 @use 'base';
 @use 'components';
 @use 'pages';
+
+body{
+    background-color: var(--linen-clr);
+}
