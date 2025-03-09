@@ -1,0 +1,53 @@
+// HERO SECTION
+.hero{
+    width: 100%;
+    height: 90vh;
+
+    .hero__content{
+        height: 100%;
+
+        .hero__img__container{
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+        h3{
+            background-color: var(--purple-clr);
+        }
+    }  
+}
+
+@media (max-width: 991px) {
+    .hero{
+        height: 100vh;
+
+        .hero__content{
+            .row:nth-of-type(2){
+                justify-content: space-between;
+
+                .col-md-4{
+                    margin: auto;
+                    
+                    .arrow__btn__container{
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .hero__info p{
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .row:nth-of-type(2){
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+}
