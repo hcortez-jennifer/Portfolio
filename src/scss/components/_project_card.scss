@@ -1,0 +1,22 @@
+.project__card{
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    
+    &:hover{
+        transform: scale(0.8);
+    }
+
+    h3{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        background-color: var(--linen-clr);
+    }
+
+    .project__details{
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        background-color: var(--linen-clr);
+    }
+}
