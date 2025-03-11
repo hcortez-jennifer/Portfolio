@@ -11857,22 +11857,13 @@ textarea.form-control-lg {
 }
 h1 {
   font-family: "Hastegi";
-  font-size: clamp(3rem, 9vw, 8rem);
+  font-size: clamp(4rem, 9vw, 8rem);
   line-height: 1;
 }
 
 h3 {
   font-size: 2rem;
-}
-
-.arrow__btn__container {
-  border: 1.5px solid var(--black-clr);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.arrow__btn__container i {
-  font-size: 3rem;
+  background-color: var(--purple-clr);
 }
 
 .navbar .navbar-toggler {
@@ -11898,9 +11889,42 @@ h3 {
     border: none;
   }
 }
+.arrow__btn__container {
+  border: 1.5px solid var(--black-clr);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.arrow__btn__container i {
+  font-size: 3rem;
+}
+
+.project__card {
+  position: relative;
+  width: 100%;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.project__card:hover {
+  transform: scale(0.8) !important;
+}
+.project__card h3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: var(--linen-clr);
+}
+.project__card .project__details {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  background-color: var(--linen-clr);
+}
+
 .hero {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
 }
 .hero .hero__content {
   height: 100%;
@@ -11912,14 +11936,8 @@ h3 {
   width: 100%;
   height: 50vh;
 }
-.hero .hero__content h3 {
-  background-color: var(--purple-clr);
-}
 
 @media (max-width: 991px) {
-  .hero {
-    height: 100vh;
-  }
   .hero .hero__content .row:nth-of-type(2) {
     justify-content: space-between;
   }
@@ -11939,7 +11957,45 @@ h3 {
     gap: 1em;
   }
 }
-body {
+.projects {
+  position: relative;
+  margin-bottom: 50em;
+  overflow: hidden;
+}
+.projects .projects__content .row .projects__info {
+  border-right: 1px solid var(--black-clr);
+}
+.projects .projects__content .row .projects__info .row:nth-of-type(1) h1 {
+  font-size: clamp(4rem, 20vw, 8rem);
+}
+
+@media (max-width: 991px) {
+  .projects .projects__content .row {
+    gap: 2rem;
+  }
+  .projects .projects__content .row .projects__info {
+    display: flex;
+    justify-content: space-between;
+    border-right: none;
+  }
+  .projects .projects__content .row .projects__info .row:nth-of-type(1) {
+    align-items: center;
+  }
+  .projects .projects__content .row .projects__info .row:nth-of-type(2) {
+    border-left: 1px solid var(--black-clr);
+  }
+  .projects .projects__content .row .project__card {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+}
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7em;
+}
+
+html, body {
+  overflow-x: hidden;
   background-color: var(--linen-clr);
 }
 

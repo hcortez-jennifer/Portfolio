@@ -4,7 +4,13 @@
 @use 'components';
 @use 'pages';
 
-body{
+*{
+    scroll-behavior: smooth;
+    scroll-padding-top: 7em;
+}
+
+html, body{
+    overflow-x: hidden;
     background-color: var(--linen-clr);
 }
 
