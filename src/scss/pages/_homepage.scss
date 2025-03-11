@@ -50,14 +50,19 @@
 .projects{
     position: relative;
     margin-bottom: 50em;
-}
+    overflow: hidden;
 
-.projects__info{
-    border-right: 1px solid var(--black-clr);
-
-    .row:nth-of-type(1){
-        h1{
-            font-size: clamp(4rem, 20vw, 8rem);
+    .projects__content{
+        .row{
+            .projects__info{
+                border-right: 1px solid var(--black-clr);
+            
+                .row:nth-of-type(1){
+                    h1{
+                        font-size: clamp(4rem, 20vw, 8rem);
+                    }
+                }
+            }
         }
     }
 }
@@ -80,6 +85,11 @@
                     .row:nth-of-type(2){
                         border-left: 1px solid var(--black-clr);
                     }
+                }
+
+                .project__card {
+                    opacity: 1 !important;
+                    transform: scale(1) !important;
                 }
             }
         }

@@ -11901,10 +11901,13 @@ h3 {
 
 .project__card {
   position: relative;
-  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .project__card:hover {
-  transform: scale(0.8);
+  transform: scale(0.8) !important;
 }
 .project__card h3 {
   position: absolute;
@@ -11957,12 +11960,12 @@ h3 {
 .projects {
   position: relative;
   margin-bottom: 50em;
+  overflow: hidden;
 }
-
-.projects__info {
+.projects .projects__content .row .projects__info {
   border-right: 1px solid var(--black-clr);
 }
-.projects__info .row:nth-of-type(1) h1 {
+.projects .projects__content .row .projects__info .row:nth-of-type(1) h1 {
   font-size: clamp(4rem, 20vw, 8rem);
 }
 
@@ -11980,6 +11983,10 @@ h3 {
   }
   .projects .projects__content .row .projects__info .row:nth-of-type(2) {
     border-left: 1px solid var(--black-clr);
+  }
+  .projects .projects__content .row .project__card {
+    opacity: 1 !important;
+    transform: scale(1) !important;
   }
 }
 * {
