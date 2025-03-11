@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    height: 100vh;
+
+    .footer__content{
+        height: 100%;
+
+        small{
+            background-color: var(--purple-clr);
+        }
+
+        .row:nth-of-type(2){
+            background-image: url("../../assets/img/footer__img.jpg");
+            background-size: cover;
+            background-position: center;
+
+            .arrow__btn__container{
+                background-color: var(--purple-clr); 
+            }
+        }
+    }
+}

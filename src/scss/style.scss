@@ -14,6 +14,6 @@ html, body{
     background-color: var(--linen-clr);
 }
 
-section:not(.hero){
+section:not(.hero), .footer{
     margin-top: 7em;
 }
