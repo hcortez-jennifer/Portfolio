@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
+@font-face{
     font-family: "Hastegi";
     src: url("../../assets/font/Hastegi-yYBYe.otf");
+}
+
+@font-face{
+    font-family: "Steelfish";
+    src: url("../../assets/font/steelfish.rg-regular.ttf");
 }
 
 h1{
@@ -11,7 +16,22 @@ h1{
     line-height: 1;
 }
 
+h2{
+    font-family: "Steelfish";
+    font-weight: 700;
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 1.1;
+}
+
 h3{
     font-size: 2rem;
     background-color: var(--purple-clr);
+}
+
+.about__content__grid{
+    .quote{
+        font-size: clamp(1.8rem, 3vw, 2.5rem);
+        font-weight: 700;
+        background-color: var(--purple-clr);
+    }
 }

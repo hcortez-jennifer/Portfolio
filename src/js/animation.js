@@ -6,7 +6,7 @@ gsap.timeline()
             amount: 1
         }
     }, "1")
-    .from(".hero__container, .hero__h1, .hero__info, .contact__info", {
+    .from(".hero__container, .hero__h1, .hero__info, .contact__info, .about__container, .about__header, .about__content__grid", {
         y: 50,
         opacity: 0,
         stagger: {

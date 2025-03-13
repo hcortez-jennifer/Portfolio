@@ -11848,12 +11848,16 @@ textarea.form-control-lg {
 :root {
   --purple-clr: #c3beef;
   --linen-clr: #fef3e9;
-  --black-clr: #212529;
+  --black-clr: #333;
 }
 
 @font-face {
   font-family: "Hastegi";
   src: url("../../assets/font/Hastegi-yYBYe.otf");
+}
+@font-face {
+  font-family: "Steelfish";
+  src: url("../../assets/font/steelfish.rg-regular.ttf");
 }
 h1 {
   font-family: "Hastegi";
@@ -11861,8 +11865,21 @@ h1 {
   line-height: 1;
 }
 
+h2 {
+  font-family: "Steelfish";
+  font-weight: 700;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1.1;
+}
+
 h3 {
   font-size: 2rem;
+  background-color: var(--purple-clr);
+}
+
+.about__content__grid .quote {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
   background-color: var(--purple-clr);
 }
 
@@ -11998,7 +12015,7 @@ h3 {
   }
 }
 @media (max-width: 767px) {
-  .row:nth-of-type(2) {
+  .hero .hero__content .row:nth-of-type(2) {
     flex-direction: column-reverse;
     gap: 1em;
   }
@@ -12043,6 +12060,54 @@ h3 {
   }
   .projects .projects__content .row .projects__info .row:nth-of-type(2) {
     border-left: none;
+  }
+}
+.about__content__grid .col-lg-5 .about__section h2 {
+  background-color: var(--black-clr);
+  color: white;
+}
+.about__content__grid .col-lg-5 .about__section .float {
+  float: left;
+  width: 55%;
+  background-color: var(--linen-clr);
+  padding: 1em;
+}
+
+@media (max-width: 991px) {
+  .about__header .col-12 {
+    align-items: center;
+  }
+  .about__content__grid .col-lg-7 .skills__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about__content__grid .col-lg-7 .skills__section .skills__header {
+    border-right: 1px solid var(--black-clr);
+    padding-inline: 2em;
+  }
+}
+@media (max-width: 565px) {
+  .about__content__grid .col-lg-5 .about__section {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__content__grid .col-lg-5 .about__section .float {
+    float: none;
+    order: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .about__content__grid .col-lg-7 .skills__section {
+    flex-direction: column;
+  }
+  .about__content__grid .col-lg-7 .skills__section .skills__header {
+    border-right: none;
+    display: flex;
+    gap: 2rem;
   }
 }
 * {

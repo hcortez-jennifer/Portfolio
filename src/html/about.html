@@ -31,30 +31,64 @@
     <section class="about" id="about">
         <div class="container about__container border-top border-black">
             <div class="about__content">
-                <div class="row">
-                    <div class="col-12  d-flex justify-content-between align-items-center">
+                <div class="row mt-5 about__header">
+                    <div class="col-12 d-flex justify-content-center  gap-5">
                         <h1 class="text-uppercase">About me</h1>
-                        <div class="arrow__btn__container d-flex justify-content-center align-items-center">
-                            <a href="#contact" class="arrow__btn">
-                                <i class='bx bx-down-arrow-alt'></i>
-                            </a>
+                        <div>
+                            <div class="arrow__btn__container d-flex justify-content-center align-items-center">
+                                <a href="#contact" class="arrow__btn">
+                                    <i class='bx bx-down-arrow-alt'></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
+                
+                <div class="row about__content__grid border border-black mt-3">
+                    <div class="col-lg-5 d-flex flex-column gap-5 border border-black">
+                        <div class="row">
+                            <div class="about__section p-0">
+                                <h2 class="m-0 px-5 py-3 text-uppercase">The inside</h2>
+                                <div class="float"><img src="../../assets/img/about__img1.jpg" alt="" class="img-fluid"></div>
+                                <h2 class="pb-3 text-uppercase d-flex justify-content-center">scoop</h2>
+                                <p class="px-3 pt-3 ">Hello! I'm Jennifer, and I've always been an artist at heart as it's a part of who I am. My journey started with traditional art and progressed to different mediums, but I soon discovered a love for web design and development. When I'm not coding or designing, I enjoy drawing both digitally and traditionally, using pencil and charcoal to bring ideas to life. Whether I’m creating a website, sketching in charcoal, or exploring new design techniques, I’m always looking for ways to refine my skills and push my boundaries.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="quote text-center"><i class='bx bxs-quote-left'></i> Designing for the Web, Drawing for the Soul</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-8 p-0 d-flex flex-column gap-5 border border-black">
+                                <div class="about__img__container">
+                                    <img src="../../assets/img/about__img3.jpg" alt="" class="img-fluid">
+                                </div>
+                                <p class="quote text-center"><i class='bx bxs-quote-left'></i> A blank canvas has unlimited possibilities</p>
+                            </div>
+                            <div class="col-lg-4 skills__section border border-black">
+                                <div class="skills__header">
+                                    <h2>Skills</h2>
+                                    <h2>Skills</h2>
+                                    <h2>Skills</h2>
+                                </div>
+                                <div class="skills__info">
+                                    <p><b>Design & branding:</b> Brand identity, Visual identity, UX/UI, Figma</p>
+                                    <p><b>Web development:</b> HTML, CSS, JavaScript, Bootstrap, Sass</p>
+                                    <p><b>Version control:</b> Git, Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border border-black">
+                            <div class="about__img__container p-0">
+                                <img src="../../assets/img/about__img2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
 
     <footer class="footer d-flex border-top border-black" id="contact">
         <div class="container footer__container">
@@ -89,10 +123,9 @@
         </div>
     </footer>
 
-
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="../js/index.js"></script>
-    <!-- <script src="../js/animation.js"></script> -->
+    <script src="../js/animation.js"></script>
 </body>
 </html>
