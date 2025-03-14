@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap');
 
 @font-face{
     font-family: "Hastegi";
@@ -28,10 +28,22 @@ h3{
     background-color: var(--purple-clr);
 }
 
+.project__page__h3{
+    background-color: transparent;
+    font-family: "Steelfish";
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .about__content__grid{
     .quote{
         font-size: clamp(1.8rem, 3vw, 2.5rem);
         font-weight: 700;
         background-color: var(--purple-clr);
     }
+}
+
+.manrope__type{
+    font-family: "Manrope";
+    font-size: 2rem;
 }

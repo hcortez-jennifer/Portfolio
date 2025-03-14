@@ -8,3 +8,17 @@
         font-size: 3rem;
     }
 }
+
+.secondary__arrow__btn i{
+    border: 1.5px solid var(--black-clr);
+    background-color: var(--purple-clr);
+    border-radius: 50%;
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-left: 0.3em;
+    transition: transform 0.3s ease;
+}
+
+.secondary__arrow__btn:hover i{
+    transform: translateX(8px);
+}
