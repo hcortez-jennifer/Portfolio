@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jennifer Cortez Herrera - Web designer & developer</title>
     <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
@@ -15,11 +16,10 @@
                 <button class="navbar-toggler" type="button">
                     <i class='bx bx-menu-alt-right menu__icon'></i>
                 </button>
-
                 <div class="collapse navbar-collapse navbar__menu justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="#works">Works /</a></li>
-                        <li class="nav-item"><a class="nav-link" href="src/html/about.html">About /</a></li>
+                        <li class="nav-item"><a class="nav-link" href="src/html/archive.html">Archive /</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact /</a></li>
                     </ul>
                 </div>
@@ -27,45 +27,54 @@
         </nav>
     </header>
 
-    <section class="hero d-flex" id="hero">
+    <section class="hero" id="hero">
         <div class="container hero__container border-top border-black">
             <div class="hero__content d-flex flex-column gap-5">
                 <div class="row mt-5">
                     <div class="col-lg-6 d-flex align-items-center hero__h1">
                         <h1 class="text-uppercase">Web designer & developer</h1>
                     </div>
-                    <div class="col-lg-6 p-0">
-                        <div class="hero__img__container">
-                            <img src="assets/img/hero_img.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
                 </div>
-        
-                <div class="row flex-grow-1 align-items-end">
+                <div class="row align-items-center">
                     <div class="col-lg-6"></div>
                     <div class="col-lg-2 col-md-4">
                         <div class="arrow__btn__container d-flex justify-content-center align-items-center">
                             <a href="#works" class="arrow__btn">
-                                <i class='bx bx-down-arrow-alt'></i>
+                                <div><img src="assets/icon/down__arrow.png" alt="" class="img-fluid arrow__img"></div>
+                                <div class="circular__text">
+                                    <p>Scroll down scroll down scroll down</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8 hero__info">
-                        <h3 class="py-2 mb-2 text-center">Hello, I'm Jennifer</h3>
+                        <h3 class="mt-2">Hello, I'm Jennifer</h3>
                         <p>I bring ideas to life through design and code, creating digital experiences that are clean, intuitive, and visually engaging.
                         </p>
                     </div>
                 </div>
-        
-                <div class="row contact__info border-top border-bottom border-black py-2">
-                    <div class="col text-center">
-                        <a href="#" class="text-decoration-none">Email</a>
+                <div class="row align-items-center gap-5 border-top border-bottom border-black py-2 service__info">
+                    <div class="col-auto">
+                        <div class="col-auto">
+                            <p class="m-0">What I offer:</p>
+                        </div>
                     </div>
-                    <div class="col text-center">
-                        <a href="https://github.com/hcortez-jennifer" class="text-decoration-none">Github</a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="#" class="text-decoration-none">LinkedIn</a>
+                    <div class="col-auto d-flex justify-content-between flex-grow-1 service">
+                        <div class="col-auto service__item">
+                            <p class="m-0">Brand identity /</p>
+                        </div>
+                        <div class="col-auto service__item">
+                            <p class="m-0">Visual identity /</p>
+                        </div>
+                        <div class="col-auto service__item">
+                            <p class="m-0">UX/UI design /</p>
+                        </div>
+                        <div class="col-auto service__item">
+                            <p class="m-0">Web design /</p>
+                        </div>
+                        <div class="col-auto service__item">
+                            <p class="m-0">Web development /</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,31 +84,31 @@
     <section class="projects" id="works">
         <div class="container projects__container">
             <div class="projects__content">
-                <div class="row ">
+                <div class="row">
                     <div class="col-lg-4 projects__info">
-                        <div class="row">
-                            <h1 class="text-uppercase text-center">Works</h1>
-                        </div>
-                        <div class="row">
-                            <div>
-                                <h3 class="text-center py-2 mb-3">Services</h3>
-                                <p class="border-bottom border-black py-1">Brand identity</p>
-                                <p class="border-bottom border-black py-1">Visual identity</p>
-                                <p class="border-bottom border-black py-1">UX/UI design</p>
-                                <p class="border-bottom border-black py-1">Web design</p>
-                                <p class="border-bottom border-black py-1">Web development</p>
+                        <div class="row me-5">
+                            <h1 class="text-uppercase ">Works</h1>
+                            <div class="d-flex justify-content-center">
+                                <div class="arrow__btn__container d-flex justify-content-center align-items-center">
+                                    <a href="#works" class="arrow__btn">
+                                        <div><img src="assets/icon/right__arrow.png" alt="" class="img-fluid arrow__img"></div>
+                                        <div class="circular__text">
+                                            <p>Scroll down scroll down scroll down</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8 projects__card__container d-flex flex-column gap-5">
-                        <div class="project__card ">
+                        <div class="project__card">
                             <h3 class="p-2">01</h3>
                             <div class="project__img__container">
                                 <a href="src/html/auclo.html">
-                                    <img src="assets/img/auclo_mockup.png" alt="" class="img-fluid">
+                                    <img src="assets/img/auclo__img/auclo__computer__mockup1.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="project__details px-4 lead">
+                            <div class="project__details px-4">
                                 <p class="m-0">Auclo</p>
                                 <p class="m-0">2025</p>
                             </div>
@@ -108,10 +117,10 @@
                             <h3 class="p-2">02</h3>
                             <div class="project__img__container">
                                 <a href="src/html/lacatrina.html">
-                                    <img src="assets/img/la_catrina_mockup.png" alt="" class="img-fluid">
+                                    <img src="assets/img/la__catrina__img/la__catrina__computer__mockup1.png" alt="" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="project__details px-4 lead">
+                            <div class="project__details px-4">
                                 <p class="m-0">La Catrina</p>
                                 <p class="m-0">2025</p>
                             </div>
@@ -122,33 +131,36 @@
         </div>
     </section>
 
-    <footer class="footer d-flex border-top border-black" id="contact">
+    <footer class="footer border-top border-black" id="contact">
         <div class="container footer__container">
-            <div class="footer__content d-flex flex-column gap-5">
+            <div class="footer__content">
                 <div class="row">
                     <div class="col-lg-8 mt-5">
                         <h1 class="text-uppercase">Contact me</h1>
-                        <small class="p-2">&copy; 2025 Jennifer Cortez Herrera</small>
+                        <small class="p-2 border-top border-bottom border-black">&copy; 2025 Jennifer Cortez Herrera</small>
                     </div>
                 </div>
-                <div class="row flex-grow-1 align-items-end">
-                    <div class="col-12 d-flex justify-content-end py-3">
+                <div class="row flex-grow-1 align-items-end my-5">
+                    <div class="col-12 d-flex justify-content-end">
                         <div class="arrow__btn__container d-flex justify-content-center align-items-center">
                             <a href="#hero" class="arrow__btn">
-                                <i class='bx bx-up-arrow-alt'></i>
+                                <div><img src="assets/icon/up__arrow.png" alt="" class="img-fluid arrow__img"></div>
+                                <div class="circular__text">
+                                    <p>Scroll up scroll up scroll up</p>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="row contact__info border-top border-bottom border-black py-2 my-3">
-                    <div class="col text-center">
-                        <a href="#" class="text-decoration-none">Email</a>
+                <div class="row contact__info justify-content-between border-top border-bottom border-black py-2 mb-4 mt-3">
+                    <div class="col-auto">
+                        <a href="#" class="text-decoration-none footer__nav__item">Email /</a>
                     </div>
-                    <div class="col text-center">
-                        <a href="https://github.com/hcortez-jennifer" class="text-decoration-none">Github</a>
+                    <div class="col-auto">
+                        <a href="https://github.com/hcortez-jennifer" class="text-decoration-none footer__nav__item">Github /</a>
                     </div>
-                    <div class="col text-center">
-                        <a href="#" class="text-decoration-none">LinkedIn</a>
+                    <div class="col-auto">
+                        <a href="#" class="text-decoration-none footer__nav__item">LinkedIn /</a>
                     </div>
                 </div>
             </div>
@@ -159,6 +171,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="src/js/index.js"></script>
-    <script src="src/js/animation.js"></script>
+    <!-- <script src="src/js/animation.js"></script> -->
 </body>
 </html>

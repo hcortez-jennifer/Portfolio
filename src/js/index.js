@@ -20,3 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+// CIRCULAR TEXT
+document.querySelectorAll(".circular__text p").forEach((circularText) => {
+    circularText.innerHTML = circularText.innerText
+        .split("")
+        .map((char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`)
+        .join("");
+});
