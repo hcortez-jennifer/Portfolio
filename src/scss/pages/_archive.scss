@@ -1,6 +1,6 @@
-.about__content__grid{
+.archive__content__grid{
     .col-lg-5{
-        .about__section{
+        .archive__section{
             h2{
                 background-color: var(--black-clr);
                 color: white;
@@ -17,11 +17,7 @@
 }
 
 @media (max-width: 991px) {
-    .about__header .col-12{
-        align-items: center;
-    }
-
-    .about__content__grid{
+    .archive__content__grid{
         .col-lg-7{
             .skills__section{
                 display: flex;
@@ -40,9 +36,9 @@
 }
 
 @media (max-width: 565px) {
-    .about__content__grid{
+    .archive__content__grid{
         .col-lg-5{
-            .about__section{
+            .archive__section{
                 display: flex;
                 flex-direction: column;
 
@@ -57,7 +53,7 @@
 }
 
 @media (max-width: 480px) {
-    .about__content__grid{
+    .archive__content__grid{
         .col-lg-7{
             .skills__section{
                 flex-direction: column;
