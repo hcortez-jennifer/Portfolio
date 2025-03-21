@@ -1,48 +1,11 @@
+@use '../abstracts' as a;
+
 // HERO SECTION
 .hero{
-    width: 100%;
-    min-height: 90vh;
-
     .hero__content{
-        height: 100%;
-
-        h1{
-            position: relative;
-
-            &::before{
-                content: '';
-                display: block;
-                width: 50%;
-                height: 40px;
-                background-color: var(--purple-clr);
-                position: absolute;
-                top: 12%;
-                right: 10%;
-            }
-        }
-
-        .hero__img__container{
-            position: relative;
-
-            img{
-                width: 100%;
-                height: 50vh;
-            }
-        }
-    }  
-}
-
-@media (max-width: 1199px) {
-    .hero{
-        .hero__content{
-            h1{
-                z-index: 1;
-
-                &::before{
-                    width: 70%;
-                    top: 55%;
-                    z-index: -1;
-                }
+        .service__info{
+            & > .col-auto:nth-of-type(1){
+                font-weight: 500;
             }
         }
     }
@@ -51,13 +14,6 @@
 @media (max-width: 991px) {
     .hero{
         .hero__content{
-            h1{
-                &::before{
-                    width: 42%;
-                    right: 0;
-                }
-            }
-
             .row:nth-of-type(2){
                 justify-content: space-between;
 
@@ -68,11 +24,15 @@
                         margin: 0 auto;
                     }
                 }
-            }
 
-            .hero__info p{
-                margin-top: 1em;
+                .hero__info p{
+                    margin-top: 1em;
+                }
             }
+            
+            .service__info{
+                gap: 1rem !important;
+            } 
         }
     }
 }
@@ -82,7 +42,23 @@
         .hero__content{
             .row:nth-of-type(2){
                 flex-direction: column-reverse;
-                gap: 1em;
+                gap: 3rem;
+
+                .col-md-4{
+                    margin-top: 1em;
+                }
+
+                .col-md-8{
+                    border-top: none !important;
+                }
+            }
+
+            .service__info{
+                .service{
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    justify-content: start !important;
+                }
             }
         }
     }
@@ -98,10 +74,8 @@
             .projects__info{
                 border-right: 1px solid var(--black-clr);
             
-                .row:nth-of-type(1){
-                    h1{
-                        margin-top: 1em;
-                    }
+                h1{
+                    margin-top: 1em;
                 }
             }
         }
@@ -111,20 +85,31 @@
 @media (max-width: 991px) {
     .projects{
         .projects__content{
-            .row{
+
+            & > .row{
                 gap: 2rem;
 
                 .projects__info{
-                    display: flex;
-                    justify-content: space-between;
                     border-right: none;
+                    padding-bottom: 2em;
 
-                    .row:nth-of-type(1){
-                        align-items: center;
+                    .row{
+                        gap: 2rem;
                     }
 
-                    .row:nth-of-type(2){
-                        border-left: 1px solid var(--black-clr);
+                    h1{
+                        margin-top: 0;
+                    }
+
+                    .row > div{
+                        justify-content: end !important;
+                        margin-bottom: 2em;
+                    }
+
+                    .arrow__btn__container{
+                        .arrow__img{
+                            content: url("../../assets/icon/down__arrow.png");
+                        }
                     }
                 }
 
@@ -137,24 +122,16 @@
     }
 }
 
-@media (max-width: 370px) {
-    .projects{
-        .projects__content{
-            .row{
-                .projects__info{
-                    flex-direction: column;
+// FOOTER
+.footer{
+    .footer__content{
+        .row:nth-of-type(2){
+            margin-bottom: 5em;
+        }
 
-                    .row:nth-of-type(1){
-                        h1{
-                            margin-top: 0;
-                        }
-                    }
-
-                    .row:nth-of-type(2){
-                        border-left: none;
-                    }
-                }
-            }
+        .footer__nav__item{
+            padding: 0.5em 1em;
+            @include a.purple;
         }
     }
 }

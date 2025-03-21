@@ -5,11 +5,6 @@
     src: url("../../assets/font/Hastegi-yYBYe.otf");
 }
 
-@font-face{
-    font-family: "Steelfish";
-    src: url("../../assets/font/steelfish.rg-regular.ttf");
-}
-
 h1{
     font-family: "Hastegi";
     font-size: clamp(4rem, 9vw, 8rem);
@@ -17,21 +12,27 @@ h1{
 }
 
 h2{
-    font-family: "Steelfish";
+    font-family: "Hastegi";
     font-weight: 700;
-    font-size: clamp(3rem, 8vw, 7rem);
-    line-height: 1.1;
+    font-size: clamp(3rem, 7vw, 7rem);
+    line-height: 0.8;
 }
 
 h3{
     font-size: 2rem;
-    background-color: var(--purple-clr);
 }
 
-.about__content__grid{
+.project__page__h3{
+    font-size: 3rem;
+}
+
+.archive__content__grid{
     .quote{
         font-size: clamp(1.8rem, 3vw, 2.5rem);
         font-weight: 700;
-        background-color: var(--purple-clr);
     }
+}
+
+.font__body{
+    font-size: clamp(1rem, 5vw, 2rem);
 }

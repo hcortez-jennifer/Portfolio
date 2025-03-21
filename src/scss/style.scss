@@ -14,6 +14,10 @@ html, body{
     background-color: var(--linen-clr);
 }
 
-section:not(.hero, .about), .footer{
+::selection {
+    background: var(--purple-clr);
+}
+
+section:not(.hero, .archive, .project__brief), .project__brief__info, .footer{
     margin-top: 7em;
 }

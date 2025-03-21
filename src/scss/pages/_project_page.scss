@@ -1,0 +1,223 @@
+// PROJECT BRIEF
+.project__brief{
+    .project__brief__content{
+        .project__brief__info{
+            @media (max-width: 991px) {
+                gap: 3rem;
+            }
+
+            .project__brief__summary{
+                border-right: 1px solid var(--black-clr);
+
+                @media (max-width: 991px) {
+                    border-right: none;
+                }    
+            }           
+        }
+    }
+}
+
+// LOGO SECTION
+.logo{
+    .logo__content{
+        .row{
+            @media (max-width: 565px) {
+                flex-direction: column-reverse;
+            }
+
+            h1{
+                font-family: "Ibarra Real Nova", serif;
+            }
+    
+            .col-lg-6:nth-of-type(2){
+                .row:nth-of-type(1){
+                    border-bottom: 1px solid var(--black-clr);
+                }
+    
+                @media (max-width: 767px) {
+                    display: flex;
+                    gap: 1rem;
+    
+                    .row:nth-of-type(1){
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+                }
+    
+                @media (max-width: 565px) {
+                    flex-direction: column;
+    
+                    .row:nth-of-type(1){
+                        border-bottom: 1px solid var(--black-clr);
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// COLORS SECTION
+.colors{
+    .colors__content{
+        .row{
+            .col-lg-6:nth-of-type(1){
+                .row:nth-of-type(1){
+                    border-bottom: 1px solid var(--black-clr);
+                }
+
+                @media (max-width: 991px) {
+                    display: flex;
+
+                    .row:nth-of-type(1){
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+
+                    .row:nth-of-type(1){
+                        border-bottom: 1px solid var(--black-clr);
+                        border-right: none;
+                    }
+                }
+            }
+
+            .col-lg-6:nth-of-type(2){
+                .color__card{
+                    .color__name{
+                        font-weight: 650;
+                    }
+                }
+                
+                @media (max-width: 565px) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+// TYPOGRAPHY SECTION
+.typography{
+    .typography__content{
+        .row{
+            .col-lg-3:nth-of-type(1){
+                .font__label{
+                    border-bottom: 1px solid var(--black-clr);
+                }
+
+                .font__role{
+                    border-top: 1px solid var(--black-clr);
+                }
+            }
+
+            .col-lg-6{
+                & > div:nth-of-type(2){
+                    display: none;
+                }
+            }
+
+            .font__style{
+                & > div:not(div:nth-last-of-type(1)){
+                    border-bottom: 1px solid var(--black-clr);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .typography{
+        .typography__content{
+            .row{
+                .col-lg-3:nth-of-type(1){
+                    flex-direction: row !important;
+
+                    .font__label{
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+    
+                    .font__role{
+                        border-top: none;
+                        border-left: 1px solid var(--black-clr);
+                    }
+                }
+
+                .col-lg-6{
+                    gap: 4rem;
+
+                    & > div:nth-of-type(2){
+                        display: block;
+                    }
+                }
+
+                .font__style{
+                    flex-direction: row !important;
+
+                    div{
+                        flex-grow: 1;
+                    }
+
+                    & > div:not(div:nth-last-of-type(1)){
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+
+                    .arrow__btn__container-d-none{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .typography{
+        .typography__content{
+            .row{
+                .col-lg-3:nth-of-type(1){
+                    div{
+                        flex-grow: 1;
+                    }
+
+                    .font__role{
+                        border-left: none;
+                    }
+                }
+
+                .font__style{
+                    flex-wrap: wrap;
+
+                    div:nth-of-type(3){
+                        border-top: 1px solid var(--black-clr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MOCKUPS SECTION
+@media (max-width: 991px) {
+    .mockups{
+        .mockups__content img:not(.first__mockup__img){
+            margin-top: 5em;
+        }
+    }
+}
+
+// ARROWS SECTION
+@media (max-width: 991px) {
+    .arrows{
+        .arrows__content{
+            .row{
+                justify-content: space-between !important;
+            }
+        }
+    }
+}

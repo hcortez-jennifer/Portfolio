@@ -1,4 +1,11 @@
+@use '../abstracts' as a;
+
 .navbar{
+    .navbar-brand, .nav-item{
+        padding-inline: 0.5em;
+        @include a.purple;
+    }
+
     .navbar-toggler{
         border: none;
     
@@ -18,13 +25,15 @@
     .navbar{
         .navbar-collapse{
             margin-top: 1em;
-        }
 
-        .navbar-nav li{
-            border-bottom: 1px solid var(--black-clr);
-
-            &:nth-of-type(3){
-                border: none;
+            .nav-item{
+                border-radius: 0%;
+                padding-inline: 0;
+                border-bottom: 1px solid var(--black-clr);
+                
+                &:nth-of-type(3){
+                    border: none;
+                }
             }
         }
     }
