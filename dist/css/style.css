@@ -11872,9 +11872,17 @@ h3 {
   font-size: 2rem;
 }
 
+.project__page__h3 {
+  font-size: 3rem;
+}
+
 .archive__content__grid .quote {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 700;
+}
+
+.font__body {
+  font-size: clamp(1rem, 5vw, 2rem);
 }
 
 .navbar .navbar-brand, .navbar .nav-item {
@@ -11946,6 +11954,20 @@ h3 {
   left: 50%;
   top: -130%;
   transform-origin: 0px 85px;
+}
+
+.secondary__arrow__btn {
+  width: fit-content;
+}
+.secondary__arrow__btn .arrow__btn__container {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+.secondary__arrow__btn:hover .arrow__btn__container {
+  transform: translateX(8px);
+  background-color: var(--purple-clr);
+  border: none;
 }
 
 .project__card {
@@ -12107,42 +12129,18 @@ h3 {
     gap: 2rem;
   }
 }
-.secondary__arrow__btn i {
-  border: 1.5px solid var(--black-clr);
-  border-radius: 50%;
-  font-size: 2rem;
-  vertical-align: middle;
-  margin-left: 0.3em;
-  transition: background-color 0.5s ease;
-  -webkit-transition: background-color 0.5s ease;
-  -moz-transition: background-color 0.5s ease;
-  -ms-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
+@media (max-width: 991px) {
+  .project__brief .project__brief__content .project__brief__info {
+    gap: 3rem;
+  }
 }
-
-.secondary__arrow__btn:hover i {
-  background-color: var(--purple-clr);
-}
-
-.manrope__type {
-  font-family: "Manrope";
-  font-size: 2rem;
-}
-
-.preview {
-  border-left: 1px solid var(--black-clr);
-}
-
-.preview2 {
+.project__brief .project__brief__content .project__brief__info .project__brief__summary {
   border-right: 1px solid var(--black-clr);
-  border-bottom: 1px solid var(--black-clr);
-  padding-bottom: 2em;
 }
-
-.project__brief .project__brief__content .row .project__brief__img__container:nth-of-type(1) img {
-  height: 50vh;
-  width: 100%;
-  object-fit: cover;
+@media (max-width: 991px) {
+  .project__brief .project__brief__content .project__brief__info .project__brief__summary {
+    border-right: none;
+  }
 }
 
 @media (max-width: 565px) {
@@ -12206,79 +12204,75 @@ h3 {
   }
 }
 
-.typography {
-  margin-bottom: 50em;
-}
-@media (max-width: 565px) {
-  .typography .typography__content .row {
-    padding: 0 !important;
-    padding-top: 1em !important;
-  }
-}
-.typography .typography__content .row .col-lg-3:nth-of-type(1) {
-  flex-direction: column;
-}
-.typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(1) {
+.typography .typography__content .row .col-lg-3:nth-of-type(1) .font__label {
   border-bottom: 1px solid var(--black-clr);
 }
+.typography .typography__content .row .col-lg-3:nth-of-type(1) .font__role {
+  border-top: 1px solid var(--black-clr);
+}
+.typography .typography__content .row .col-lg-6 > div:nth-of-type(2) {
+  display: none;
+}
+.typography .typography__content .row .font__style > div:not(div:nth-last-of-type(1)) {
+  border-bottom: 1px solid var(--black-clr);
+}
+
 @media (max-width: 991px) {
-  .typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(1) {
+  .typography .typography__content .row .col-lg-3:nth-of-type(1) {
+    flex-direction: row !important;
+  }
+  .typography .typography__content .row .col-lg-3:nth-of-type(1) .font__label {
     border-bottom: none;
     border-right: 1px solid var(--black-clr);
   }
-}
-.typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(2) {
-  display: none;
-}
-@media (max-width: 991px) {
-  .typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(2) {
-    display: block;
-  }
-}
-@media (max-width: 565px) {
-  .typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(2) .arrow__btn__container {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1em;
-  }
-}
-.typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(3) {
-  border-top: 1px solid var(--black-clr);
-}
-@media (max-width: 991px) {
-  .typography .typography__content .row .col-lg-3:nth-of-type(1) .row:nth-of-type(3) {
+  .typography .typography__content .row .col-lg-3:nth-of-type(1) .font__role {
     border-top: none;
     border-left: 1px solid var(--black-clr);
   }
-}
-@media (max-width: 991px) {
-  .typography .typography__content .row .col-lg-3:nth-of-type(1) {
-    flex-direction: row;
+  .typography .typography__content .row .col-lg-6 {
+    gap: 4rem;
   }
-}
-.typography .typography__content .row .font__section {
-  flex-direction: column;
-}
-.typography .typography__content .row .font__section .row:not(.row:nth-of-type(4)) {
-  border-bottom: 1px solid var(--black-clr);
-}
-@media (max-width: 991px) {
-  .typography .typography__content .row .font__section .row:not(.row:nth-of-type(4)) {
+  .typography .typography__content .row .col-lg-6 > div:nth-of-type(2) {
+    display: block;
+  }
+  .typography .typography__content .row .font__style {
+    flex-direction: row !important;
+  }
+  .typography .typography__content .row .font__style div {
+    flex-grow: 1;
+  }
+  .typography .typography__content .row .font__style > div:not(div:nth-last-of-type(1)) {
     border-bottom: none;
     border-right: 1px solid var(--black-clr);
   }
-}
-@media (max-width: 991px) {
-  .typography .typography__content .row .font__section .row:nth-of-type(4) {
+  .typography .typography__content .row .font__style > div:nth-of-type(4) {
     display: none;
   }
 }
-@media (max-width: 991px) {
-  .typography .typography__content .row .font__section {
-    flex-direction: row;
+@media (max-width: 450px) {
+  .typography .typography__content .row .col-lg-3:nth-of-type(1) div {
+    flex-grow: 1;
+  }
+  .typography .typography__content .row .col-lg-3:nth-of-type(1) .font__role {
+    border-left: none;
+  }
+  .typography .typography__content .row .font__style {
+    flex-wrap: wrap;
+  }
+  .typography .typography__content .row .font__style div:nth-of-type(3) {
+    border-top: 1px solid var(--black-clr);
   }
 }
-
+@media (max-width: 991px) {
+  .mockups .mockups__content img:not(.first__mockup__img) {
+    margin-top: 5em;
+  }
+}
+@media (max-width: 991px) {
+  .arrows .arrows__content .row {
+    justify-content: space-between !important;
+  }
+}
 * {
   scroll-behavior: smooth;
   scroll-padding-top: 7em;
@@ -12293,7 +12287,7 @@ html, body {
   background: var(--purple-clr);
 }
 
-section:not(.hero, .archive, .project__brief), .footer {
+section:not(.hero, .archive, .project__brief), .project__brief__info, .footer {
   margin-top: 7em;
 }
 
