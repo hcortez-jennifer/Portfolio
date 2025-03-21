@@ -12245,7 +12245,7 @@ h3 {
     border-bottom: none;
     border-right: 1px solid var(--black-clr);
   }
-  .typography .typography__content .row .font__style > div:nth-of-type(4) {
+  .typography .typography__content .row .font__style .arrow__btn__container-d-none {
     display: none;
   }
 }

@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
             { name: "Manrope", cssClass: "manrope__type", fontFamily: "'Manrope', sans-serif", label: "Primary type", role: "Body" },
             { name: "Ibarra real nova", cssClass: "ibarra__type", fontFamily: "'Ibarra Real Nova', serif", label: "Secondary type", role: "Header and title" }
         ],
+        "lacatrina.html": [
+            { name: "Montserrat", cssClass: "montserrat__type", fontFamily: "'Montserrat', sans-serif", label: "Primary type", role: "Body, header, and title" },
+            { name: "Chocolate", cssClass: "chocolate__type", fontFamily: "'Chocolate', cursive", label: "Secondary type", role: "Subtitle"}
+        ],
         "default": [
             { name: "Arial", cssClass: "arial__type", fontFamily: "'Arial', sans-serif", label: "Primary type", role: "Body" },
             { name: "Georgia", cssClass: "georgia__type", fontFamily: "'Georgia', serif", label: "Secondary type", role: "Titles" }
