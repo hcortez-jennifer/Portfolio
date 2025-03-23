@@ -1,18 +1,46 @@
 // PROJECT BRIEF
 .project__brief{
     .project__brief__content{
+        .row:nth-of-type(3){
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            // border: 1px solid red;
+
+            .project__brief__img__container{
+                width: 80%;
+                // border-top: 1px solid #000;
+                // border-bottom: 1px solid #000;
+            }
+        }
+
         .project__brief__info{
-            @media (max-width: 991px) {
-                gap: 3rem;
+            .project__brief__summary{
+                border-right: 1px solid var(--black-clr); 
+            }  
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .project__brief{
+        .project__brief__content{
+            .row:nth-of-type(3){
+                .project__brief__img__container{
+                    width: 100%;
+                }
             }
 
-            .project__brief__summary{
-                border-right: 1px solid var(--black-clr);
+            .project__brief__info{
+                gap: 3rem;
 
-                @media (max-width: 991px) {
+                .project__brief__summary{
                     border-right: none;
-                }    
-            }           
+                }
+
+                .project__brief__about > div{
+                    margin-inline: 0 !important;
+                }
+            }
         }
     }
 }
