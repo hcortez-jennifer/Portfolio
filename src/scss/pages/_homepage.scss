@@ -66,9 +66,6 @@
 
 // WORKS SECTION
 .projects{
-    position: relative;
-    overflow: hidden;
-
     .projects__content{
         .row{
             .projects__info{
@@ -111,11 +108,6 @@
                             content: url("../../assets/icon/down__arrow.png");
                         }
                     }
-                }
-
-                .project__card {
-                    opacity: 1 !important;
-                    transform: scale(1) !important;
                 }
             }
         }
