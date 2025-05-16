@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
             { name: "Montserrat", cssClass: "montserrat__type", fontFamily: "'Montserrat', sans-serif", label: "Primary type", role: "Body, header, and title" },
             { name: "Chocolate", cssClass: "chocolate__type", fontFamily: "'Chocolate', cursive", label: "Secondary type", role: "Subtitle"}
         ],
+         "theosea.html": [
+            { name: "Quicksand", cssClass: "quicksand__type", fontFamily: "'Quicksand', sans-serif", label: "Primary type", role: "Body, header, and subtitle" }
+        ],
         "default": [
             { name: "Arial", cssClass: "arial__type", fontFamily: "'Arial', sans-serif", label: "Primary type", role: "Body" },
             { name: "Georgia", cssClass: "georgia__type", fontFamily: "'Georgia', serif", label: "Secondary type", role: "Titles" }

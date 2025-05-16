@@ -11863,7 +11863,6 @@ h1 {
 
 h2 {
   font-family: "Hastegi";
-  font-weight: 700;
   font-size: clamp(5rem, 7vw, 7rem);
   line-height: 0.8;
 }
@@ -11992,8 +11991,12 @@ h3 {
   background-color: var(--linen-clr);
 }
 
+.project__card4 .project__details {
+  width: 200px;
+}
+
 .hero .hero__content .service__info > .col-auto:nth-of-type(1) {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
@@ -12171,6 +12174,27 @@ h3 {
   .logo .logo__content .row .col-lg-6:nth-of-type(2) .row:nth-of-type(1) {
     border-bottom: 1px solid var(--black-clr);
     border-right: none;
+  }
+}
+
+.theosea__img__container img {
+  width: 100%;
+  max-width: 50%;
+  margin: 1em 0;
+}
+@media (max-width: 1199px) {
+  .theosea__img__container img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .theosea__img__container img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .theosea__img__container img {
+    max-width: 60%;
   }
 }
 

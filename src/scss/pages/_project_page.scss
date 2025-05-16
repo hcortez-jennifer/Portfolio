@@ -85,6 +85,26 @@
     }
 }
 
+.theosea__img__container{
+    img{
+        width: 100%;
+        max-width: 50%;
+        margin: 1em 0;
+
+        @media (max-width: 1199px) {
+            max-width: 70%;
+        }
+
+        @media (max-width: 991px) {
+            max-width: 90%;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 60%;
+        }
+    }
+}
+
 // COLORS SECTION
 .colors{
     .colors__content{
