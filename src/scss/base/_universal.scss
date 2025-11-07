@@ -1,0 +1,17 @@
+*{
+    scroll-behavior: smooth;
+    scroll-padding-top: 7em;
+}
+
+html, body{
+    overflow-x: hidden;
+    background-color: var(--linen-clr);
+}
+
+::selection {
+    background: var(--purple-clr);
+}
+
+section:not(.hero, .archive, .project__brief), .project__brief__info, .footer{
+    margin-top: 7em;
+}

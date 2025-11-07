@@ -1,0 +1,9 @@
+// PURPLE HOVER
+@mixin purple{
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+
+    &:hover{
+        background-color: var(--purple-clr);
+    }
+}
