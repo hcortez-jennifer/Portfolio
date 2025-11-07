@@ -1,0 +1,65 @@
+@use '../abstracts' as a;
+
+// HERO SECTION
+.hero{
+    .hero__content{
+        .service__info{
+            & > .col-auto:nth-of-type(1){
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .hero{
+        .hero__content{
+            .row:nth-of-type(2){
+                justify-content: space-between;
+
+                .col-md-4{
+                    margin: auto;
+                    
+                    .arrow__btn__container{
+                        margin: 0 auto;
+                    }
+                }
+
+                .hero__info p{
+                    margin-top: 1em;
+                }
+            }
+            
+            .service__info{
+                gap: 1rem !important;
+            } 
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hero{
+        .hero__content{
+            .row:nth-of-type(2){
+                flex-direction: column-reverse;
+                gap: 3rem;
+
+                .col-md-4{
+                    margin-top: 1em;
+                }
+
+                .col-md-8{
+                    border-top: none !important;
+                }
+            }
+
+            .service__info{
+                .service{
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    justify-content: start !important;
+                }
+            }
+        }
+    }
+}

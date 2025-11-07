@@ -22,3 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Circular text effect
+document.querySelectorAll(".circular__text p").forEach((circularText) => {
+    circularText.innerHTML = circularText.innerText
+        .split("")
+        .map((char, i) => `<span style="transform:rotate(${i * 15}deg)">${char}</span>`)
+        .join("");
+});
