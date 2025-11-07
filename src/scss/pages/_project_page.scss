@@ -1,0 +1,268 @@
+// PROJECT BRIEF
+.project__brief{
+    .project__brief__content{
+        .row:nth-of-type(3){
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+
+            .project__brief__img__container{
+                width: 80%;
+            }
+        }
+
+        .project__brief__info{
+            .project__brief__summary{
+                border-right: 1px solid var(--black-clr); 
+            }  
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .project__brief{
+        .project__brief__content{
+            .row:nth-of-type(3){
+                .project__brief__img__container{
+                    width: 100%;
+                }
+            }
+
+            .project__brief__info{
+                gap: 3rem;
+
+                .project__brief__summary{
+                    border-right: none;
+                }
+
+                .project__brief__about > div{
+                    margin-inline: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+// LOGO SECTION
+.logo{
+    .logo__content{
+        .row{
+            @media (max-width: 565px) {
+                flex-direction: column-reverse;
+            }
+
+            h1{
+                font-family: "Ibarra Real Nova", serif;
+            }
+    
+            .col-lg-6:nth-of-type(2){
+                .row:nth-of-type(1){
+                    border-bottom: 1px solid var(--black-clr);
+                }
+    
+                @media (max-width: 767px) {
+                    display: flex;
+                    gap: 1rem;
+    
+                    .row:nth-of-type(1){
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+                }
+    
+                @media (max-width: 565px) {
+                    flex-direction: column;
+    
+                    .row:nth-of-type(1){
+                        border-bottom: 1px solid var(--black-clr);
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.theosea__img__container{
+    img{
+        width: 100%;
+        max-width: 50%;
+        margin: 1em 0;
+
+        @media (max-width: 1199px) {
+            max-width: 70%;
+        }
+
+        @media (max-width: 991px) {
+            max-width: 90%;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 60%;
+        }
+    }
+}
+
+// COLORS SECTION
+.colors{
+    .colors__content{
+        .row{
+            .col-lg-6:nth-of-type(1){
+                .row:nth-of-type(1){
+                    border-bottom: 1px solid var(--black-clr);
+                }
+
+                @media (max-width: 991px) {
+                    display: flex;
+
+                    .row:nth-of-type(1){
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+
+                    .row:nth-of-type(1){
+                        border-bottom: 1px solid var(--black-clr);
+                        border-right: none;
+                    }
+                }
+            }
+
+            .col-lg-6:nth-of-type(2){
+                .color__card{
+                    .color__name{
+                        font-weight: 650;
+                    }
+                }
+                
+                @media (max-width: 565px) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+// TYPOGRAPHY SECTION
+.typography{
+    .typography__content{
+        .row{
+            .col-lg-3:nth-of-type(1){
+                .font__label{
+                    border-bottom: 1px solid var(--black-clr);
+                }
+
+                .font__role{
+                    border-top: 1px solid var(--black-clr);
+                }
+            }
+
+            .col-lg-6{
+                & > div:nth-of-type(2){
+                    display: none;
+                }
+            }
+
+            .font__style{
+                & > div:not(div:nth-last-of-type(1)){
+                    border-bottom: 1px solid var(--black-clr);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .typography{
+        .typography__content{
+            .row{
+                .col-lg-3:nth-of-type(1){
+                    flex-direction: row !important;
+
+                    .font__label{
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+    
+                    .font__role{
+                        border-top: none;
+                        border-left: 1px solid var(--black-clr);
+                    }
+                }
+
+                .col-lg-6{
+                    gap: 4rem;
+
+                    & > div:nth-of-type(2){
+                        display: block;
+                    }
+                }
+
+                .font__style{
+                    flex-direction: row !important;
+
+                    div{
+                        flex-grow: 1;
+                    }
+
+                    & > div:not(div:nth-last-of-type(1)){
+                        border-bottom: none;
+                        border-right: 1px solid var(--black-clr);
+                    }
+
+                    .arrow__btn__container-d-none{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .typography{
+        .typography__content{
+            .row{
+                .col-lg-3:nth-of-type(1){
+                    div{
+                        flex-grow: 1;
+                    }
+
+                    .font__role{
+                        border-left: none;
+                    }
+                }
+
+                .font__style{
+                    flex-wrap: wrap;
+
+                    div:nth-of-type(3){
+                        border-top: 1px solid var(--black-clr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MOCKUPS SECTION
+@media (max-width: 991px) {
+    .mockups{
+        .mockups__content img:not(.first__mockup__img){
+            margin-top: 5em;
+        }
+    }
+}
+
+// ARROWS SECTION
+@media (max-width: 991px) {
+    .arrows{
+        .arrows__content{
+            .row{
+                justify-content: space-between !important;
+            }
+        }
+    }
+}
