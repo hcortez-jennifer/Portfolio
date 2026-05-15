@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
          "theosea.html": [
             { name: "Quicksand", cssClass: "quicksand__type", fontFamily: "'Quicksand', sans-serif", label: "Primary type", role: "Body, header, and subtitle" }
         ],
+        "celesse.html": [
+            { name: "Craftwork Sans", cssClass: "craftworksans__type", fontFamily: "'Craftworksans', sans-serif", label: "Primary type", role: "Body"},
+            { name: "Chiqueta", cssClass: "chiqueta__type", fontFamily: "'Chiqueta', serif", label: "Secondary type", role: "Header, title, subtitle"},
+            { name: "Monsieur La Doulaise", cssClass: "monsieurladoulaise__type", fontFamily: "'Monsieur La Doulaise', cursive", label: "Complimentary type", role: "Accent"}
+        ],
         "default": [
             { name: "Arial", cssClass: "arial__type", fontFamily: "'Arial', sans-serif", label: "Primary type", role: "Body" },
             { name: "Georgia", cssClass: "georgia__type", fontFamily: "'Georgia', serif", label: "Secondary type", role: "Titles" }
@@ -41,8 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
         fontLabel.textContent = font.label;
         fontRole.textContent = font.role;
 
+        // arrowBtns.forEach((arrow) => {
+        //     arrow.src = currentFontIndex === 0 ? rightArrow.href : leftArrow.href;
+        // });
+
         arrowBtns.forEach((arrow) => {
-            arrow.src = currentFontIndex === 0 ? rightArrow.href : leftArrow.href;
+            if (currentFontIndex < currentFonts.length - 1) {
+                arrow.src = rightArrow.href;
+            } else {
+                arrow.src = leftArrow.href;
+            }
         });
     }
 
@@ -50,7 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", (e) => {
             e.preventDefault();
 
-            currentFontIndex = currentFontIndex === 0 ? 1 : 0;
+            // currentFontIndex = currentFontIndex === 0 ? 1 : 0;
+            currentFontIndex = (currentFontIndex + 1) % currentFonts.length;
             updateTypography();
         });
     });
